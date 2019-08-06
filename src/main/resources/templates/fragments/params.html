@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<body>
+<header th:insert="fragments/general.html :: header"> </header>
+<div th:replace="fragments/general.html
+      :: formField(field='Name', value='John Doe',size='30')">
+</div>
+<div th:replace="fragments/general.html :: footer"></div>
+</body>
+</body>
+</html>

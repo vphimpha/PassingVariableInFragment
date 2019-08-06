@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div th:fragment="printGreetings (name)" th:with="title=${title} ?: 'Mr.', greeting=${greeting} ?: 'Hello'">
+    <span th:text="${greeting}">Hello</span>
+    <span th:text="${title}">Mr.</span>
+    <span th:text="${name}">John Doe</span>
+</div>
+
+</body>
+</html>
